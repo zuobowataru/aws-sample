@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"></meta>
+  <title>SQS Send</title>
+</head>
+<body>
+  <h1>SQS Send</h1>
+  <form method="post" th:action="@{/sqs}">
+    メッセージ(Standard): <input type="text" name="message" />
+    <button type="submit" name="standard">standard</button><br>
+    <button type="submit" name="deadLetter">deadLetter</button><br>
+    <button type="submit" name="fifo">fifo</button>    
+  </form>
+</body>
+</html>
